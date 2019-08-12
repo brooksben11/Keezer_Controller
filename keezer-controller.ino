@@ -244,7 +244,7 @@ if (Tempcounter < TempnumReadings) {
 }
 //Calculate temperature using the average read value
 TempC=((100*((float)Tempaverage/4095)*3.3)-50); //Pin1=Power, Pin2=Vout, Pin3=Ground
-TempF=((TempC*9/5)+32-7); //Added -7 as calibration factor; compared readings to 2 seperate thermometers to verify this value
+TempF=((TempC*9/5)+32);
 Temp=TempF; //Select TempF or TempC
 }
 
